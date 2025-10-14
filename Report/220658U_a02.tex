@@ -83,7 +83,22 @@
 \begin{document}
     \maketitle
 
-    \textbf{Question 01}
+    \textbf{Question 01} We construct the scale-normalized (Lindeberg, 1998) LoG kernel given by \[
+		L_\sigma[x, y] = \sigma^2 \times \left[ \dfrac{x^2 + y^2 - 2\sigma^2}{2\pi\sigma^6}\right] \exp\left[-\dfrac{x^2+y^2}{2\sigma^2}\right],
+	\] convolve the image with it at several scales and square the response at each scale, to construct the squared normalized LoG scale-space $S[x, y, \sigma]$ of the image.
+	
+	Each $[x, y, \sigma]$ in the scale-space is compared with the 26 neighbors adjacent to it, and flagged as a local maximum if $S[x, y, \sigma]$ is greater than its values at the neighbors. We have shown in the Jupyter Notebook that such a maximum may be interpreted as the presence of a blob with radius $\sigma\sqrt{2}$ at image coordinates $[x, y]$.
+
+	We construct the scale-space with $\sigma \in [1, 11]$. Figure \ref{blobs} shows the blobs detected at each value of $\sigma$, with a circle with radius $\sigma\sqrt{2}$ round it.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{imgs/blobs.png}
+		\caption{Blobs detected at various scales}
+		\label{blobs}
+	\end{figure}
+
+	The blob with the largest radius was found corresponding to $\sigma = 8$, with a radius of around $11.31$ pixels.
 
     \textbf{Question 02}
     
