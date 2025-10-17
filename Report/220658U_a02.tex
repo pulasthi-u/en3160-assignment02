@@ -80,7 +80,7 @@
 	\small{Progress on \href{https://github.com/pulasthi-u/en3160-assignment02}{GitHub \extlink}}
 }
 
-\date{9 September 2025}
+\date{17 October 2025}
 
 \allowdisplaybreaks
 
@@ -127,7 +127,7 @@ for blob in local_maxima_3D(S, 3, 0.105): # 0.105 = threshold found experimental
 	The blob with the largest radius was found corresponding to $\sigma = 8$, with a radius of around $11.31$ pixels.
 
 	We make the following observation: the same sunflower center has been detected multiple times (many circles drawn on top of each other). Hence, a method such as non-maximum suppression might be necessary to suppress such redundant blobs.
-	
+
     \textbf{Question 02} The relevant portion of the \lstinline|RANSAC| function implementing RANSAC is as follows:
 	\begin{lstlisting}
 for _ in range(iterations):
