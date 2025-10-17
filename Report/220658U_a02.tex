@@ -126,7 +126,8 @@ for blob in local_maxima_3D(S, 3, 0.105): # 0.105 = threshold found experimental
 
 	The blob with the largest radius was found corresponding to $\sigma = 8$, with a radius of around $11.31$ pixels.
 
-	Clearly, 
+	We make the following observation: the same sunflower center has been detected multiple times (many circles drawn on top of each other). Hence, a method such as non-maximum suppression might be necessary to suppress such redundant blobs.
+	
     \textbf{Question 02} The relevant portion of the \lstinline|RANSAC| function implementing RANSAC is as follows:
 	\begin{lstlisting}
 for _ in range(iterations):
@@ -159,15 +160,25 @@ for _ in range(iterations):
 			0.70x + 0.71y = 1.31, \quad\text{and}\quad (x - 2.13)^2 + (y - 2.85)^2 = 10.01^2.
 		\]
 
-		\item \phantom{a}
+		\item Figure \ref{linefirst} shows all required points and plots on the same diagram.
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.6\textwidth]{imgs/q2graph.png}
-			\caption{RANSAC models and regression-optimized models computed from a noisy point set}
+			\begin{subfigure}{0.45\textwidth}
+				\includegraphics[width=\textwidth]{imgs/q2graph.png}
+				\caption{Fitting line first, then circle}
+				\label{linefirst}
+			\end{subfigure}
+			\hfill
+			\begin{subfigure}{0.45\textwidth}
+				\includegraphics[width=\textwidth]{imgs/q2graph_circlefirst.png}
+				\caption{Fitting circle first, then line}
+				\label{circlefirst}
+			\end{subfigure}
+			\caption{Fitting lines and circles using RANSAC}
 			\label{q2graph}
 		\end{figure}
 
-		\item With enough iterations, it would not matter whether we try to fit the circle first or the line first; RANSAC will discover a correct set of inliers inliers eventually, assuming there are sufficiently many inliers. Trying this out in the code also yielded very similar results to the above.
+		\item With enough iterations, it would not matter whether we try to fit the circle first or the line first; RANSAC will discover a correct set of inliers inliers eventually, assuming there are sufficiently many inliers. Trying this out in the code also yielded very similar results to the above (Figure \ref{circlefirst}).
 		
 		However, the probability that we find at least one set of inliers in $M$ iterations is $1 - \left(1 - r^N\right)^M$. For fixed $M$ (and $r$), this probability is greater for the line ($N=2$) than for the circle ($N=3$). Hence, if $M$ is small, and we try to fit the circle first, we are more likely to pick up wrong points, possibly even points belonging to the line, and end up with a wrong estimate.
 	\end{enumerate}

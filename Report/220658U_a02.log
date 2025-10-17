@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.6)  17 OCT 2025 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.6)  17 OCT 2025 20:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -768,28 +768,33 @@ Package pdftex.def Info: imgs/blobs.png  used on input line 122.
 {C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 
 [2 <./imgs/blobs.png>]
-<imgs/q2graph.png, id=64, 489.9906pt x 476.2593pt>
+<imgs/q2graph.png, id=65, 489.9906pt x 476.2593pt>
 File: imgs/q2graph.png Graphic file (type png)
 <use imgs/q2graph.png>
-Package pdftex.def Info: imgs/q2graph.png  used on input line 165.
-(pdftex.def)             Requested size: 281.85585pt x 273.96323pt.
-<imgs/q31.png, id=66, 1438.173pt x 364.2408pt>
+Package pdftex.def Info: imgs/q2graph.png  used on input line 167.
+(pdftex.def)             Requested size: 211.3883pt x 205.46333pt.
+<imgs/q2graph_circlefirst.png, id=66, 489.9906pt x 476.2593pt>
+File: imgs/q2graph_circlefirst.png Graphic file (type png)
+<use imgs/q2graph_circlefirst.png>
+Package pdftex.def Info: imgs/q2graph_circlefirst.png  used on input line 173.
+(pdftex.def)             Requested size: 211.3883pt x 205.46333pt.
+<imgs/q31.png, id=69, 1438.173pt x 364.2408pt>
 File: imgs/q31.png Graphic file (type png)
 <use imgs/q31.png>
-Package pdftex.def Info: imgs/q31.png  used on input line 191.
+Package pdftex.def Info: imgs/q31.png  used on input line 202.
 (pdftex.def)             Requested size: 469.75499pt x 118.97154pt.
-<imgs/q32.png, id=67, 1438.173pt x 276.7941pt>
+<imgs/q32.png, id=70, 1438.173pt x 276.7941pt>
 File: imgs/q32.png Graphic file (type png)
 <use imgs/q32.png>
-Package pdftex.def Info: imgs/q32.png  used on input line 195.
+Package pdftex.def Info: imgs/q32.png  used on input line 206.
 (pdftex.def)             Requested size: 469.75499pt x 90.40892pt.
 
 
-[3 <./imgs/q2graph.png>]
-<imgs/q4.png, id=85, 1045.7469pt x 714.7503pt>
+[3 <./imgs/q2graph.png> <./imgs/q2graph_circlefirst.png>]
+<imgs/q4.png, id=89, 1045.7469pt x 714.7503pt>
 File: imgs/q4.png Graphic file (type png)
 <use imgs/q4.png>
-Package pdftex.def Info: imgs/q4.png  used on input line 240.
+Package pdftex.def Info: imgs/q4.png  used on input line 251.
 (pdftex.def)             Requested size: 469.75499pt x 321.06755pt.
 
 
@@ -804,17 +809,17 @@ Package rerunfilecheck Info: File `220658U_a02.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36790 strings out of 473530
- 843362 string characters out of 5716247
+ 36803 strings out of 473530
+ 843698 string characters out of 5716247
  1921170 words of memory out of 5000000
- 59418 multiletter control sequences out of 15000+600000
+ 59431 multiletter control sequences out of 15000+600000
  583467 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,87p,729b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,9n,87p,729b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on 220658U_a02.pdf (5 pages, 2538859 bytes).
+Output written on 220658U_a02.pdf (5 pages, 2598706 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
+ 177 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
